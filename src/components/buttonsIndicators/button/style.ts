@@ -37,6 +37,11 @@ const getThemeColors = (p: ThemedStyledProps<Props>) => {
           mainColor = p.theme.color.brandBat
           hoverColor = p.theme.color.brandBatInteracting
           activeColor = p.theme.color.brandBatActive
+        } else if (p.brand === 'fulldive') {
+          // FIXME: Add fulldive colors to theme colors.
+          mainColor = 'linear-gradient(to right, #FF9900, #FF018A)'
+          hoverColor = 'linear-gradient(to right, #FF9900, #FF018A)'
+          activeColor = 'linear-gradient(to right, #FF9900, #FF018A)'
         }
         break
       case 'default':
@@ -77,7 +82,7 @@ const StyledButton = styled<Props, 'button'>('button')`
   flex-direction: ${p => p.icon && p.icon.position === 'after' ? 'row' : 'row-reverse'};
   justify-content: center;
   align-items: center;
-  font-family: Poppins, sans-serif;
+  font-family: Montserrat, Poppins, sans-serif;
   cursor: ${p => p.disabled ? 'default' : 'pointer'};
   user-select: none;
   font-size: ${largeMediumSmall('14px', '13px', '11px')};

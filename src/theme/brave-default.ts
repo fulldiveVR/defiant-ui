@@ -56,8 +56,8 @@ const theme: ITheme = {
     lionLogo: colors.grey500
   },
   fontFamily: {
-    heading: 'Poppins, sans-serif',
-    body: 'Muli, sans-serif',
+    heading: 'Montserrat, Poppins, sans-serif',
+    body: 'Montserrat, Muli, sans-serif',
     system: '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif'
   }
 }

@@ -27,14 +27,14 @@ export interface Props {
 
 export type Level = 'primary' | 'secondary' | 'tertiary'
 export type Type = 'default' | 'accent' | 'warn' | 'subtle'
-export type Brand = 'brave' | 'rewards'
+export type Brand = 'brave' | 'rewards' | 'fulldive'
 export type Size = 'call-to-action' | 'large' | 'medium' | 'small'
 
 export default class ThemedButton extends React.PureComponent<Props, {}> {
   static displayName = 'Button'
 
   static defaultProps = {
-    brand: 'brave',
+    brand: 'fulldive',
     size: 'medium',
     type: 'default',
     level: 'primary',
